@@ -70,7 +70,7 @@ func main() {
         fmt.Println("> Number of Tags : ", len(resp.Tags))
         for _, tag := range resp.Tags {
             fmt.Println(" - Key: ", *tag.Key)
-            fmt.Println("   - Value: ", *tag.Value)
+            fmt.Println("   Value: ", *tag.Value)
         }
     } else {
         // Print out the json encoded list of tags
