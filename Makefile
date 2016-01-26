@@ -24,5 +24,5 @@ build-local:
 docker-build:
 	docker run --rm -v $(PWD):/src -e COMPRESS_BINARY=$(COMPRESS_BINARY) $(BUILDER_IMAGE)$(BUILDER_IMAGE_EXTRA-$@)
 
-build build-cross: update-deps godepdocker-build
+build build-cross: update-deps godep docker-build
 
